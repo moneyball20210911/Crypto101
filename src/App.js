@@ -1,11 +1,10 @@
-import './style.css';
+import React from 'react';
+import Admin from './admin';
 
-function App() {
-  return (
-    <div className="App">
-      this is the initial
-    </div>
-  );
+function App(){
+    return(
+        <Admin />
+    )
 }
 
 export default App;

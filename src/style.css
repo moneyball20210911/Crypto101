@@ -1,38 +1,302 @@
 .App {
+  font-family: sans-serif;
+}
+body{
+  margin: 0;
+}
+.alam{
+  width: 60%;
+  margin-left: 18%;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  background-color: rgba(1, 116, 199, 0);
+  font-size: 20px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
   text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.alam-text:hover{
+  text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.alam:hover{
+  text-decoration: none;
+}
+.alam {
+  animation: pulseGlow 2s infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+  }
+  25% {
+    box-shadow: 0px 0px 2.5px 1px rgba(255, 255, 255, 0.25);
+  }
+  50% {
+    box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.5);
+  }
+  85% {
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.access{
+  background-color: black;
+  display: block;
+}
+.get-address{
+  border: white 5px solid;
+  border-radius: 5px;
+}
+.left-black{
+  background-color: black;
   color: white;
 }
+.contents{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 70px;
+  padding: 15px;
+}
+@media (max-width: 600px){
+  .contents{
+    width: 95%;
+    margin-left: 2.5%;
+  }
+}
+.font-x-1{
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 3px;
 
-.App-link {
-  color: #61dafb;
+}
+.font-x-2{
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 3px;
+
+}
+.font-x-3{
+  font-size: 12px;
+  letter-spacing: 1px;
+  word-wrap: break-word;
+}
+.right-white{
+  background-color: white;
+  color: black;
+  margin-right: 10px;
+  margin-left: 10px;
+  height: 100%;
+}
+.font-y-1{
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: rgb(0, 149, 217)!important;
+}
+.font-y-3{
+  font-size: 12px;
+  letter-spacing: 1px;
+  word-wrap: break-word;
+  font-family: Montserrat, Helvetica, sans-serif !important;
+}
+.contents1{
+  padding: 100px 80px;
+}
+@media (max-width: 600px){
+  .contents{
+    width: 95%;
+    margin-left: 2.5%;
+  }
+  .contents1{
+    padding: 50px 30px;
+  }
+}
+.address{
+  width: 87%;
+  font-size: 14px;
+  border-radius: 5px !important;
+  background-position: 97%;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.2);
+  padding: 12px 18px;
+  outline: none !important;
+  box-shadow: inset 0 1px 2px rgb(130 137 150 / 23%), 0 1px 0 rgb(255 255 255 / 95%) !important;
+  text-align: left;
+}
+.email{
+  width: 87%;
+  font-size: 14px;
+  border-radius: 5px !important;
+  background-position: 97%;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.2);
+  padding: 12px 18px;
+  outline: none !important;
+  box-shadow: inset 0 1px 2px rgb(130 137 150 / 23%), 0 1px 0 rgb(255 255 255 / 95%) !important;
+  text-align: left;
+}
+.address:focus{
+  border-color: #42B0E2;
+}
+.email:focus{
+  border-color: #42B0E2;
+}
+.button-1{
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  background-color: rgb(1, 116, 199);
+  font-size: 16px;
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 20%);
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 2px;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  width: 100%;
+  text-decoration: none;
+}
+.button-1:hover{
+  background-color: #0c69a8;
+  cursor: pointer;
+}
+.font-y-2{
+  font-style: italic;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+.success{
+  background-color: rgba(29, 37, 40, 0.91);
+}
+.congrats{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Arial;
+  margin-top: 50px;
+}
+.success-landing{
+  margin-top: 30px;
+}
+.step-text{
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  font-family: Arial;
+  margin-top: 30px;
+  width: 80%;
+  margin-left: 10%;
+}
+.step-title{
+  text-align: center;
+  font-size: 25px;
+  font-family: Arial;
+  color: white;
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  text-decoration:underline;
+}
+.step-sub-title{
+  color: white;
+  font-size: 25px;
+  font-family: Arial;
+  font-weight: bold;
+}
+.steps{
+  margin-top: 50px;
+}
+.step-sub-comment{
+  color: white;
+  font-size: 15px;
+  font-family: Arial;
+}
+.video{
+  margin-left: 10%;
+}
+@media (max-width: 600px){
+  .step-sub-title{
+    text-align: center;
+  }
+  .step-sub-comment{
+    text-align: center;
+  }
+}
+@media (max-width: 1000px){
+  .back-button{
+    width: 50%;
+    margin-left: 25%;
+  }
+  .refresh-button{
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+  .warn-text{
+  color: white;
+  font-size: 18px;
+  font-family: "montserrat";
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Data-title{
+  text-align: center;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: bold;
+}
+#User-List{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#User-List td, #User-List th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#User-List tr:nth-child(even){background-color: #c0bcbc;}
+#User-List tr:hover {background-color: #ddd;}
+#User-List thead {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #1e2b26;
+  color: white;
+  text-align: center;
+}
+table{
+  width: 80%;
+  margin-left: 10%;
+}
+@media (max-width: 600px){
+  table{
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.address-list{
+  color: #04AA6D;
+}
+.email-list{
+  color: blue;
+}
+.custom-footer{
+  text-align: center;
+  margin-top: 100px;
 }
